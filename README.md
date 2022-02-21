@@ -1,4 +1,4 @@
-# Quick Start with Demo
+# Quick Start
 ### 0. Apply Token
 You need PadLocal token to run this demo. [How to Apply Token](https://github.com/padlocal/wechaty-puppet-padlocal/wiki/How-to-Apply-Token)
 
@@ -7,18 +7,18 @@ You need PadLocal token to run this demo. [How to Apply Token](https://github.co
 ```
 $ node --version // >= v12.0.0
 ``` 
-### 2. Clone the [wechaty-puppet-padlocal-demo](https://github.com/padlocal/wechaty-puppet-padlocal-demo) project.
+### 2. Clone the [wechat-hub](https://github.com/panlina/wechat-hub) project.
 
 ```
-$ git clone git@github.com:padlocal/wechaty-puppet-padlocal-demo.git
+$ git clone git@github.com:panlina/wechat-hub.git
 ```
 Then install Node dependencies.
 ```
-$ cd wechaty-puppet-padlocal-demo
+$ cd wechat-hub
 $ npm install
 ``` 
 
-### 3. Set you PadLocal Token in [`main.ts`](https://github.com/padlocal/wechaty-puppet-padlocal-demo/blob/master/main.ts)
+### 3. Set you PadLocal Token in `main.ts`
 ```ts
 const puppet = new PuppetPadlocal({
     token: "YOUR_PADLOCAL_TOKEN"
@@ -26,6 +26,6 @@ const puppet = new PuppetPadlocal({
 ```
 Then run it:
 ```
-$ npm run demo
+$ npm start
 ```
 ![carbon](https://user-images.githubusercontent.com/64943823/117439626-a6cde080-af65-11eb-85a5-815aa422b5c5.png)
