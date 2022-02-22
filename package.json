@@ -14,6 +14,6 @@
     "typescript": "^4.1.5"
   },
   "scripts": {
-    "start": "./node_modules/.bin/ts-node main.ts"
+    "start": "ts-node main.ts"
   }
 }
