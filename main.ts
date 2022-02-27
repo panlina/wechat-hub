@@ -5,7 +5,7 @@ import { Contact, log, Message, ScanStatus, Wechaty } from "wechaty";
 // log.level("silly");
 
 const puppet = new PuppetPadlocal({
-    token: "YOUR_PADLOCAL_TOKEN"
+    token: process.env.WECHATY_PUPPET_PADLOCAL_TOKEN
 })
 
 const bot = new Wechaty({
