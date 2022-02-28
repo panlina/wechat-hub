@@ -24,6 +24,17 @@ const puppet = new PuppetPadlocal({
     token: "YOUR_PADLOCAL_TOKEN"
 })
 ```
+
+### 4. Add plugins in `plugins.ts`
+```ts
+import { DingDong, EventLogger } from 'wechaty-plugin-contrib'
+export = [
+    DingDong(),
+    EventLogger(['login', 'ready', 'message'])
+];
+```
+You may need `npm install` additional packages where your plugins are.
+
 Then run it:
 ```
 $ npm start

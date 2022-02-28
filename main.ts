@@ -49,6 +49,7 @@ const bot = new Wechaty({
         log.error("TestBot", 'on error: ', error.stack);
     })
 
+bot.use(...require('./plugins.ts'));
 
 bot.start().then(() => {
     log.info("TestBot", "started.");
