@@ -50,3 +50,10 @@ bot.start().then(() => {
     log.info("TestBot", "started.");
 });
 
+process.on('uncaughtException', (err) => {
+    console.error(`Caught exception: ${err}`);
+});
+
+process.on('unhandledRejection', (reason, p) => {
+    console.error('Unhandled Rejection at: Promise', p, 'reason:', reason);
+});
